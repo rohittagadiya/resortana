@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { NavController } from '@ionic/angular';
 @Component({
   selector: 'app-root',
   templateUrl: 'app.component.html',
@@ -14,5 +15,36 @@ export class AppComponent {
     { title: 'Spam', url: '/folder/Spam', icon: 'warning' },
   ];
   public labels = ['Family', 'Friends', 'Notes', 'Work', 'Travel', 'Reminders'];
-  constructor() {}
+  constructor(
+    public navCtrl: NavController
+  ) { }
+
+  goToPage(route) {
+    switch (route) {
+      case 'change-pwd':
+        this.navCtrl.navigateRoot('change-password');
+        break;
+      case 'edit-profile':
+        this.navCtrl.navigateRoot('edit-profile');
+        break;
+      case 'forgot-pwd':
+        this.navCtrl.navigateRoot('forgot-password');
+        break;
+      case 'sort-by':
+        this.navCtrl.navigateRoot('sort-by');
+        break;
+      case 'my-acnt':
+        this.navCtrl.navigateRoot('my-account');
+        break;
+      case 'setting':
+        this.navCtrl.navigateRoot('settings');
+        break;
+      case 'login':
+        this.navCtrl.navigateRoot('login');
+        break;
+
+      default:
+        break;
+    }
+  }
 }

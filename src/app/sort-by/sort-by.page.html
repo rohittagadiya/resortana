@@ -1,0 +1,30 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-back-button text=""></ion-back-button>
+        </ion-buttons>
+        <ion-buttons slot="end">
+            <ion-menu-button style="color: black;">
+                <ion-icon name="menu-outline"></ion-icon>
+            </ion-menu-button>
+        </ion-buttons>
+        <ion-title>Sort By</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <div class="main-wrapper p-2">
+        <div class="bg"></div>
+        <ion-list>
+            <ion-radio-group mode="md" name="radio-group" (ionChange)="radioGroupChange($event)" #radioGroup>
+
+                <ion-item *ngFor="let item of sort_by_list">
+                    <ion-label>{{item.text}}</ion-label>
+                    <ion-radio slot="start" value="{{item.text}}"></ion-radio>
+                </ion-item>
+
+            </ion-radio-group>
+        </ion-list>
+        <ion-button class="custom-btn mt-3" shape="round" expand="block">Done</ion-button>
+    </div>
+</ion-content>

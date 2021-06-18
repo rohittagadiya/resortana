@@ -1,0 +1,25 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-back-button text=""></ion-back-button>
+        </ion-buttons>
+        <ion-buttons slot="end">
+            <ion-menu-button style="color: black;">
+                <ion-icon name="menu-outline"></ion-icon>
+            </ion-menu-button>
+        </ion-buttons>
+        <ion-title>My Account</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <div class="main-wrapper p-2">
+        <div class="bg"></div>
+        <ion-item *ngFor="let option of my_account_options" [detail]="false">
+            <ion-label>
+                <p>{{ option }}</p>
+            </ion-label>
+            <ion-icon name="chevron-forward-outline"></ion-icon>
+        </ion-item>
+    </div>
+</ion-content>

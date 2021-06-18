@@ -1,0 +1,52 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-back-button text=""></ion-back-button>
+        </ion-buttons>
+        <ion-buttons slot="end">
+            <ion-menu-button style="color: black;">
+                <ion-icon name="menu-outline"></ion-icon>
+            </ion-menu-button>
+        </ion-buttons>
+        <ion-title>Edit Profile</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <div class="main-wrapper p-2">
+        <div class="bg"></div>
+        <ion-item>
+            <ion-label position="floating">First Name</ion-label>
+            <ion-input type="name"></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label position="floating">Last Name</ion-label>
+            <ion-input type="name"></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label position="floating">Email Address</ion-label>
+            <ion-input type="email"></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label position="floating">Password</ion-label>
+            <ion-input type="new-password"></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label position="floating">Phone Number</ion-label>
+            <ion-input type="tel"></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label position="floating">Nationality</ion-label>
+            <ion-input></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label position="floating">Gender</ion-label>
+            <ion-input></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label position="floating">Address</ion-label>
+            <ion-input type="street-address"></ion-input>
+        </ion-item>
+        <ion-button class="custom-btn my-3" shape="round" expand="block">Update</ion-button>
+    </div>
+</ion-content>
