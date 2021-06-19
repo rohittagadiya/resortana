@@ -29,12 +29,38 @@
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
 @import "https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css";
+@mixin button-text-style {
+    font-size: 12px;
+    font-weight: 100;
+    height: 40px;
+}
+
 ion-menu-button {
     color: black;
 }
 
 ion-back-button {
     display: block;
+}
+
+ion-radio {
+    --color-checked: #c43471;
+    --color: #c43471;
+}
+
+ion-toggle {
+    height: 18px;
+    width: 38px;
+    --background: #d8d8d8;
+    --background-checked: #c43471;
+    --handle-background: #c43471;
+    --handle-background-checked: #d8d8d8;
+    --handle-width: 13px;
+    --handle-height: 13px;
+}
+
+ion-img.icon {
+    width: 22px;
 }
 
 .main-wrapper {
@@ -82,20 +108,36 @@ ion-back-button {
     --background-hover: #9e1951 !important;
     --background-activated: #9e1951 !important;
     --background-focused: #9e1951 !important;
+    @include button-text-style();
 }
 
-ion-radio {
-    --color-checked: #c43471;
-    --color: #c43471;
+.custom-btn-fb {
+    --background: #3f5793 !important;
+    --background-hover: #334b88 !important;
+    --background-activated: #334b88 !important;
+    --background-focused: #334b88 !important;
+    @include button-text-style();
 }
 
-ion-toggle {
-    height: 18px;
-    width: 38px;
-    --background: #d8d8d8;
-    --background-checked: #c43471;
-    --handle-background: #c43471;
-    --handle-background-checked: #d8d8d8;
-    --handle-width: 13px;
-    --handle-height: 13px;
+.custom-btn-gm {
+    --background: #e75a4d !important;
+    --background-hover: #da4032 !important;
+    --background-activated: #da4032 !important;
+    --background-focused: #da4032 !important;
+    @include button-text-style();
+}
+
+.custom-btn-insta {
+    --background: #d5699e !important;
+    --background-hover: #d15792 !important;
+    --background-activated: #d15792 !important;
+    --background-focused: #d15792 !important;
+    @include button-text-style();
+}
+
+.l-d-wrapper {
+    padding: 15px;
+    background: #ffffff57;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
 }
