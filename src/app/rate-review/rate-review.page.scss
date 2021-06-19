@@ -1,0 +1,19 @@
+@import "../../global.scss";
+ion-textarea {
+    border: 1px solid #abababa1;
+    border-radius: 5px;
+    padding: 8px;
+}
+
+.top-div {
+    margin-top: 20px;
+    p {
+        margin-bottom: 0;
+    }
+    ion-rating {
+        margin-bottom: 20px;
+    }
+    ion-label {
+        color: var(--theam-color);
+    }
+}

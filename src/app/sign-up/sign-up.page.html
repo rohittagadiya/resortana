@@ -1,0 +1,61 @@
+<ion-header [translucent]="true">
+    <ion-toolbar style="--background: transparent;position: absolute;">
+        <ion-buttons slot="start">
+            <ion-menu-button style="color: white;">
+                <ion-icon name="menu-outline"></ion-icon>
+            </ion-menu-button>
+        </ion-buttons>
+        <!-- <ion-title class="text-center custom-title">
+    <img src="./assets/images/Icon-196.png" alt="" style="width: 140px;vertical-align: bottom;">
+  </ion-title> -->
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <div class="main-wrapper p-2">
+        <div class="bg-login"></div>
+        <ion-item lines="none" class="mt-5">
+            <img src="./assets/images/home_logo.png" alt="">
+        </ion-item>
+        <div class="l-d-wrapper mt-3">
+            <ion-item>
+                <ion-input placeholder="Full Name" type="text" name="username"></ion-input>
+                <ion-img class="icon" src="./assets/images/name.png" slot="start"></ion-img>
+            </ion-item>
+            <ion-item>
+                <ion-input placeholder="Email Address" type="email" name="username"></ion-input>
+                <ion-img class="icon" src="./assets/images/email.png" slot="start"></ion-img>
+            </ion-item>
+            <ion-item>
+                <ion-input placeholder="Password" type="password" name="username"></ion-input>
+                <ion-img class="icon" src="./assets/images/lockpass.png" slot="start"></ion-img>
+            </ion-item>
+            <ion-item>
+                <ion-input placeholder="+971" type="tel" name="username"></ion-input>
+                <ion-img class="icon" src="./assets/images/contact.png" slot="start"></ion-img>
+            </ion-item>
+            <ion-item>
+                <ion-input placeholder="Nationality" type="text" name="username"></ion-input>
+                <ion-img class="icon" src="./assets/images/nationality.png" slot="start"></ion-img>
+            </ion-item>
+            <ion-item>
+                <ion-input placeholder="Address" type="text" name="username"></ion-input>
+                <ion-img class="icon" src="./assets/images/address.png" slot="start"></ion-img>
+            </ion-item>
+            <ion-item>
+                <ion-input placeholder="Gender" type="text" name="username"></ion-input>
+                <ion-img class="icon" src="./assets/images/gender.png" slot="start"></ion-img>
+            </ion-item>
+            <ion-item lines="none">
+                <ion-label>I accept all Terms & Conditions</ion-label>
+                <ion-checkbox slot="start" checked></ion-checkbox>
+            </ion-item>
+            <a href="">Signup as Vender here</a>
+            <ion-button class="custom-btn mt-2" shape="round" expand="block">SignUp</ion-button>
+            <ion-button class="custom-btn-fb mt-2" shape="round" expand="block">Login with Facebook</ion-button>
+            <ion-button class="custom-btn-gm mt-2" shape="round" expand="block">Signup with Gmail</ion-button>
+            <ion-button class="custom-btn-insta mt-2" shape="round" expand="block">Login with Instagram</ion-button>
+            <p>Already have an account? <strong>Login Now</strong></p>
+        </div>
+    </div>
+</ion-content>

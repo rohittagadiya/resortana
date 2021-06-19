@@ -42,6 +42,15 @@ export class AppComponent {
       case 'login':
         this.navCtrl.navigateRoot('login');
         break;
+      case 'sign-up':
+        this.navCtrl.navigateRoot('sign-up');
+        break;
+      case 'notification':
+        this.navCtrl.navigateRoot('notifications');
+        break;
+      case 'rating':
+        this.navCtrl.navigateRoot('rate-review');
+        break;
 
       default:
         break;

@@ -1,0 +1,32 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-back-button text=""></ion-back-button>
+        </ion-buttons>
+        <ion-buttons slot="end">
+            <ion-menu-button style="color: black;">
+                <ion-icon name="menu-outline"></ion-icon>
+            </ion-menu-button>
+        </ion-buttons>
+        <ion-title>Notifications</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <div class="main-wrapper p-2">
+        <div class="scroll-content">
+            <ion-item *ngFor="let message of notification_list" [detail]="false">
+                <ion-label class="ion-text-wrap">
+                    <h2>{{ message.title }}
+                        <span class="date">
+              <ion-note>
+                {{ message.date }}
+              </ion-note>
+            </span>
+                    </h2>
+                    <p>{{message.description}} </p>
+                </ion-label>
+            </ion-item>
+        </div>
+    </div>
+</ion-content>

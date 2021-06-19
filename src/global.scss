@@ -29,10 +29,20 @@
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
 @import "https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css";
+:root {
+    --theam-color: #c43471;
+    --hover-theam-color: #9e1951;
+}
+
 @mixin button-text-style {
     font-size: 12px;
     font-weight: 100;
     height: 40px;
+    letter-spacing: 1px;
+}
+
+ion-item {
+    --background: transparent !important;
 }
 
 ion-menu-button {
@@ -63,29 +73,48 @@ ion-img.icon {
     width: 22px;
 }
 
+ion-checkbox {
+    margin-right: 8px;
+    .checkbox-icon {
+        border-color: var(--theam-color) !important;
+        background: var(--theam-color) !important;
+    }
+    --background-checked:var(--theam-color) !important;
+    --border-color-checked:var(--theam-color) !important;
+}
+
 .main-wrapper {
     text-align: center;
     height: 100%;
     position: relative;
     z-index: 5;
     // opacity: 0.1;
-}
-
-.main-wrapper .bg {
-    position: absolute;
-    z-index: -1;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    // background-position: center;
     background-size: cover;
     overflow: hidden;
     background-image: url(./assets/images/bg1.png);
-    // opacity: .2;
-    width: 100%;
-    height: 100%;
 }
+
+.scroll-content {
+    height: 100%;
+    overflow-y: auto;
+}
+
+
+/* .main-wrapper .bg {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  // background-position: center;
+  background-size: cover;
+  overflow: hidden;
+  background-image: url(./assets/images/bg1.png);
+  // opacity: .2;
+  width: 100%;
+  height: 100%;
+} */
 
 .main-wrapper .bg-login {
     position: absolute;
@@ -137,7 +166,14 @@ ion-img.icon {
 
 .l-d-wrapper {
     padding: 15px;
-    background: #ffffff57;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
+    background: #ffffffc7;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin: 0 8px;
+    max-height: calc(100% - 200px);
+    overflow-y: auto;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
