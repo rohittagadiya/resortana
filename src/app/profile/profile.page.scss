@@ -1,0 +1,22 @@
+@import "../../global.scss";
+.img-wrapper {
+    margin: 15px 0;
+    img {
+        border-radius: 50%;
+        height: 80px;
+    }
+    h3 {
+        color: var(--theam-color);
+        margin-top: 10px;
+    }
+}
+
+ion-label {
+    .label {
+        color: var(--theam-color);
+    }
+    .value {
+        color: black;
+        font-size: 15px;
+    }
+}

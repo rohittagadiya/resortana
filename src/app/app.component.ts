@@ -27,6 +27,9 @@ export class AppComponent {
       case 'edit-profile':
         this.navCtrl.navigateRoot('edit-profile');
         break;
+      case 'profile':
+        this.navCtrl.navigateRoot('profile');
+        break;
       case 'forgot-pwd':
         this.navCtrl.navigateRoot('forgot-password');
         break;
