@@ -89,6 +89,19 @@ ion-checkbox {
     --border-color-checked:var(--theam-color) !important;
 }
 
+ion-range {
+    --bar-background-active: var(--theam-color);
+    --knob-background: var(--theam-color);
+    --knob-size: 12px;
+    --bar-height: 3px;
+    height: 10px;
+}
+
+.slides-md,
+.swiper-pagination-bullet-active {
+    --bullet-background-active: var(--theam-color);
+}
+
 .main-wrapper {
     text-align: center;
     height: 100%;

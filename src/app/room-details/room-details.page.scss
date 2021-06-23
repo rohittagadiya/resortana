@@ -1,0 +1,44 @@
+@import "../../global.scss";
+.slider-bottom {
+    color: white !important;
+    background: var(--theam-color);
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+    ion-note {
+        text-align: right;
+    }
+    ion-rating {
+        font-size: 12px;
+        margin: 0;
+        --height: 10px !important;
+        ion-button {
+            --height: 10px !important;
+        }
+         :host {
+            height: 10px !important;
+        }
+    }
+    p {
+        font-size: 12px;
+        margin-bottom: 0;
+    }
+    .room-name {
+        font-size: 14px;
+    }
+}
+
+.about-room {
+    padding: 8px 12px;
+    h4 {
+        margin-bottom: 0;
+    }
+    div {
+        padding: 0;
+        .item-native {
+            padding-left: 3px !important;
+            margin-inline-end: 2px !important;
+        }
+    }
+    ion-label {
+        font-size: 12px;
+    }
+}

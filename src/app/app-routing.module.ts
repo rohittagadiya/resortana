@@ -62,6 +62,18 @@ const routes: Routes = [
   {
     path: 'checkout',
     loadChildren: () => import('./checkout/checkout.module').then( m => m.CheckoutPageModule)
+  },
+  {
+    path: 'splash-screen',
+    loadChildren: () => import('./splash-screen/splash-screen.module').then( m => m.SplashScreenPageModule)
+  },
+  {
+    path: 'room-details',
+    loadChildren: () => import('./room-details/room-details.module').then( m => m.RoomDetailsPageModule)
+  },
+  {
+    path: 'order-summary',
+    loadChildren: () => import('./order-summary/order-summary.module').then( m => m.OrderSummaryPageModule)
   }
 ];
 

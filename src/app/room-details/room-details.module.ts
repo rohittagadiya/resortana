@@ -4,9 +4,9 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { FilterPageRoutingModule } from './filter-routing.module';
+import { RoomDetailsPageRoutingModule } from './room-details-routing.module';
 
-import { FilterPage } from './filter.page';
+import { RoomDetailsPage } from './room-details.page';
 import { IonicRatingModule } from 'ionic-rating';
 
 @NgModule({
@@ -14,9 +14,9 @@ import { IonicRatingModule } from 'ionic-rating';
     CommonModule,
     FormsModule,
     IonicModule,
-    FilterPageRoutingModule,
+    RoomDetailsPageRoutingModule,
     IonicRatingModule
   ],
-  declarations: [FilterPage]
+  declarations: [RoomDetailsPage]
 })
-export class FilterPageModule {}
+export class RoomDetailsPageModule {}

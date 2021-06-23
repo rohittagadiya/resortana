@@ -21,6 +21,12 @@ export class AppComponent {
 
   goToPage(route) {
     switch (route) {
+      case 'room-details':
+        this.navCtrl.navigateRoot('room-details');
+        break;
+      case 'order-summary':
+        this.navCtrl.navigateRoot('order-summary');
+        break;
       case 'change-pwd':
         this.navCtrl.navigateRoot('change-password');
         break;
@@ -35,6 +41,9 @@ export class AppComponent {
         break;
       case 'sort-by':
         this.navCtrl.navigateRoot('sort-by');
+        break;
+      case 'filter':
+        this.navCtrl.navigateRoot('filter');
         break;
       case 'my-acnt':
         this.navCtrl.navigateRoot('my-account');
@@ -53,6 +62,9 @@ export class AppComponent {
         break;
       case 'rating':
         this.navCtrl.navigateRoot('rate-review');
+        break;
+      case 'splash-screen':
+        this.navCtrl.navigateRoot('splash-screen');
         break;
 
       default:

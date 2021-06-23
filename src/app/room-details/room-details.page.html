@@ -1,0 +1,100 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-back-button text=""></ion-back-button>
+        </ion-buttons>
+        <ion-buttons slot="end">
+            <ion-menu-button style="color: black;">
+                <ion-icon name="menu-outline"></ion-icon>
+            </ion-menu-button>
+        </ion-buttons>
+        <ion-title>Room Details</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <div>
+        <ion-slides pager="true" [options]="slideOpts">
+            <ion-slide>
+                <img src="./assets/images/1.jpg" alt="">
+            </ion-slide>
+            <ion-slide>
+                <img src="./assets/images/2.jpg" alt="">
+            </ion-slide>
+            <ion-slide>
+                <img src="./assets/images/3.jpg" alt="">
+            </ion-slide>
+            <ion-slide>
+                <img src="./assets/images/6.jpg" alt="">
+            </ion-slide>
+        </ion-slides>
+        <div class="slider-bottom px-2">
+            <div class="row pt-2">
+                <div class="col-7">
+                    <p class="room-name">King Superior Room</p>
+                </div>
+                <div class="col-5 text-right">
+                    <p>3.4 Very Good</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <ion-rating size="small" rate="3"></ion-rating>
+                </div>
+                <div class="col-6 text-right m-auto">
+                    <p>AED 600.00</p>
+                </div>
+            </div>
+        </div>
+        <div class="about-room">
+            <h4>About This Room</h4>
+            <p>Sed ullamcorper placerat enim vel tincidunt. Phasellus ante sem, molestie nec nulla sit amet, rutrum lacinia felis. Proin in mi elementum erat lacinia convallis.</p>
+            <h5>Facilities</h5>
+            <div class="row">
+                <div class="col-6">
+                    <ion-item lines="none">
+                        <ion-label placeholder="Password" type="password" name="username">Balcony</ion-label>
+                        <ion-img class="icon" src="./assets/images/lockpass.png" slot="start"></ion-img>
+                    </ion-item>
+                </div>
+                <div class="col-6">
+                    <ion-item lines="none">
+                        <ion-label placeholder="Password" type="password" name="username">AC</ion-label>
+                        <ion-img class="icon" src="./assets/images/lockpass.png" slot="start"></ion-img>
+                    </ion-item>
+                </div>
+                <div class="col-6">
+                    <ion-item lines="none">
+                        <ion-label placeholder="Password" type="password" name="username">View</ion-label>
+                        <ion-img class="icon" src="./assets/images/lockpass.png" slot="start"></ion-img>
+                    </ion-item>
+                </div>
+                <div class="col-6">
+                    <ion-item lines="none">
+                        <ion-label placeholder="Password" type="password" name="username">TV</ion-label>
+                        <ion-img class="icon" src="./assets/images/lockpass.png" slot="start"></ion-img>
+                    </ion-item>
+                </div>
+                <div class="col-6">
+                    <ion-item lines="none">
+                        <ion-label placeholder="Password" type="password" name="username">Ocean View</ion-label>
+                        <ion-img class="icon" src="./assets/images/lockpass.png" slot="start"></ion-img>
+                    </ion-item>
+                </div>
+                <div class="col-6">
+                    <ion-item lines="none">
+                        <ion-label placeholder="Password" type="password" name="username">Telephone</ion-label>
+                        <ion-img class="icon" src="./assets/images/lockpass.png" slot="start"></ion-img>
+                    </ion-item>
+                </div>
+                <div class="col-6">
+                    <ion-item lines="none">
+                        <ion-label placeholder="Password" type="password" name="username">Terrace</ion-label>
+                        <ion-img class="icon" src="./assets/images/lockpass.png" slot="start"></ion-img>
+                    </ion-item>
+                </div>
+            </div>
+        </div>
+        <ion-button class="custom-btn mt-3" shape="round" expand="block">Reserve Here</ion-button>
+    </div>
+</ion-content>
