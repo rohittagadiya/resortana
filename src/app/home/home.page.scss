@@ -1,0 +1,33 @@
+@import "../../global.scss";
+.top-section {
+    height: 55%;
+    background-size: cover;
+    background-position: 0 101%;
+    overflow: hidden;
+    background-image: url(../../assets/images/bg.png);
+    .logo {
+        width: 48%;
+        margin: auto;
+        max-width: 150px;
+    }
+    ion-item {
+        --padding-start: 0;
+    }
+}
+
+.cat-section {
+    background: #cccccc17;
+    transform: translateY(-20%);
+    img {
+        width: 50px;
+    }
+    ion-grid ion-row ion-col {
+        padding: 10px;
+    }
+    ion-grid ion-row ion-col div {
+        background: white;
+        padding: 15px;
+        border-radius: 3px;
+        box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    }
+}

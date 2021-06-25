@@ -131,9 +131,30 @@ ion-rating.small-rate {
     background-image: url(./assets/images/bg1.png);
 }
 
+.main-wrapper2 {
+    text-align: center;
+    height: 100%;
+    position: relative;
+}
+
 .scroll-content {
     height: 100%;
     overflow-y: auto;
+}
+
+.search-wrapper {
+    padding: 15px;
+    ion-searchbar {
+        padding: 0;
+        --cancel-button-color: var(--theam-color);
+        --clear-button-color: var(--theam-color);
+        input {
+            border-radius: 5px !important;
+            // text-align: left !important;
+            padding: 0 !important;
+            background: white !important;
+        }
+    }
 }
 
 

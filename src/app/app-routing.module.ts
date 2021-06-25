@@ -95,10 +95,10 @@ const routes: Routes = [
     ]
     // loadChildren: () => import('./tabs/tabs.module').then( m => m.TabsPageModule)
   },
-  {
+  /* {
     path: 'home',
     loadChildren: () => import('./home/home.module').then(m => m.HomePageModule)
-  },
+  }, */
   {
     path: 'item-details',
     loadChildren: () => import('./item-details/item-details.module').then(m => m.ItemDetailsPageModule)

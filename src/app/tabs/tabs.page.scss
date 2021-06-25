@@ -1,0 +1,15 @@
+@import "../../global.scss";
+.ion-tab-button {
+    color: grey;
+    img {
+        width: 20px;
+    }
+}
+
+.ion-tab-button[aria-selected="true"] {
+    color: var(--theam-color);
+    font-weight: 500;
+    img {
+        width: 22px;
+    }
+}
