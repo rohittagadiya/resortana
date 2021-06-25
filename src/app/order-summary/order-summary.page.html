@@ -1,9 +1,117 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>order-summary</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button text=""></ion-back-button>
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-menu-button style="color: black;">
+        <ion-icon name="menu-outline"></ion-icon>
+      </ion-menu-button>
+    </ion-buttons>
+    <ion-title>Order-summary</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
+  <div class="main-wrapper">
+    <div class="scroll-content">
+      <div class="row pt-2 ">
+        <div class="col-4 px-0">
+          <img src="./assets/images/1.jpg" alt="">
+        </div>
+        <div class="col-8 text-left">
+          <ion-label>ABC Camp</ion-label><br>
+          <!-- <p class="mb-0">Bashra Heights(8.7) miles away</p><br> -->
+          <ion-note>Bashra Heights(8.7) miles away</ion-note><br>
+          <ion-rating size="small" rate="3"></ion-rating><span>4.6</span>
+        </div>
+      </div>
+      <div class="slider-bottom px-2">
+        <div class="row pt-2">
+          <div class="col-7 text-left">
+            <p class="room-name">Traveller Name</p>
+          </div>
+          <div class="col-5 text-right">
+            <p>John Will</p>
+          </div>
+        </div>
+        <div class="row pt-2">
+          <div class="col-7 text-left">
+            <p class="room-name">Check In</p>
+          </div>
+          <div class="col-5 text-right">
+            <p>25-jul-2018</p>
+          </div>
+        </div>
+        <div class="row pt-2">
+          <div class="col-7 text-left">
+            <p class="room-name">Check Out</p>
+          </div>
+          <div class="col-5 text-right">
+            <p>25-jul-2018</p>
+          </div>
+        </div>
+        <div class="row pt-2">
+          <div class="col-7 text-left">
+            <p class="room-name">No. of Guests</p>
+            <ion-note>(3 adults, 3 children)</ion-note>
+          </div>
+          <div class="col-5 text-right">
+            <p>6</p>
+          </div>
+        </div>
+        <!--  <div class="row">
+          <div class="col-7 text-left">
+            <ion-rating size="small" rate="3"></ion-rating>
+          </div>
+          <div class="col-5 text-right m-auto">
+            <p>AED 600.00</p>
+          </div>
+        </div> -->
+      </div>
+      <ion-item lines="none" class="py-4"> </ion-item>
+      <div class="slider-bottom px-2">
+        <div class="row pt-2">
+          <div class="col-7 text-left">
+            <p class="room-name">VAT </p>
+          </div>
+          <div class="col-5 text-right">
+            <p class="room-name">10%</p>
+          </div>
+        </div>
+        <div class="row pt-2">
+          <div class="col-7 text-left">
+            <p class="room-name">Discount</p>
+          </div>
+          <div class="col-5 text-right">
+            <p class="room-name">AED 150</p>
+          </div>
+        </div>
+        <div class="row pt-2">
+          <div class="col-7 text-left">
+            <p class="room-name">Bill Paid(30%)</p>
+          </div>
+          <div class="col-5 text-right">
+            <p class="room-name">AED 225</p>
+          </div>
+        </div>
+        <div class="row pt-2">
+          <div class="col-7 text-left">
+            <p class="room-name">Bill Payable(70%)</p>
+            <ion-note>(3 adults, 3 children)</ion-note>
+          </div>
+          <div class="col-5 text-right">
+            <p class="room-name">AED 525</p>
+          </div>
+        </div>
+      </div>
+      <ion-item> </ion-item>
 
+      <ion-item>
+        <ion-label>Total</ion-label>
+        <p>AED 900</p>
+      </ion-item>
+      <ion-button class="custom-btn my-3" shape="round" expand="block">Proceed</ion-button>
+    </div>
+  </div>
 </ion-content>

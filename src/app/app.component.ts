@@ -72,7 +72,12 @@ export class AppComponent {
       case 'splash-screen':
         this.navCtrl.navigateRoot('splash-screen');
         break;
-
+      case 'checkout':
+        this.navCtrl.navigateRoot('checkout');
+        break;
+        case 'item-details':
+        this.navCtrl.navigateRoot('item-details');
+        break;       
       default:
         break;
     }
