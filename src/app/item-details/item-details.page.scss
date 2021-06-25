@@ -1,0 +1,38 @@
+@import "../../global.scss";
+
+ion-rating ion-button button {
+    width: 15px;
+    height: auto !important;
+}
+.icon-img {
+    width: 20px !important;
+    margin-right: 10px;
+}
+
+.slider-bottom {
+    color: white !important;
+    background: var(--theam-color);
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+    ion-note {
+        text-align: right;
+    }
+    ion-rating {
+        font-size: 12px;
+        margin: 0;
+        --height: 10px !important;
+        ion-button {
+            --height: 10px !important;
+        }
+        :host {
+            height: 10px !important;
+        }
+    }
+    p {
+        font-size: 11px;
+        margin-bottom: 0;
+    }
+    .room-name {
+        font-size: 14px;
+        margin-bottom: 0px;
+    }
+}

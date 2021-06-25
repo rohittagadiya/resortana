@@ -7,13 +7,15 @@ import { IonicModule } from '@ionic/angular';
 import { OrderSummaryPageRoutingModule } from './order-summary-routing.module';
 
 import { OrderSummaryPage } from './order-summary.page';
+import { IonicRatingModule } from 'ionic-rating';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    OrderSummaryPageRoutingModule
+    OrderSummaryPageRoutingModule,
+    IonicRatingModule
   ],
   declarations: [OrderSummaryPage]
 })
