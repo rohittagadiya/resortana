@@ -1,0 +1,20 @@
+<ion-content>
+    <div class="main-wrapper">
+        <div class="content-wrapper">
+            <div class="row" *ngFor="let history of booking_list">
+                <div class="col-4">
+                    <img [src]="history.img" alt="">
+                </div>
+                <div class="col-8">
+                    <h5>{{history.name}}</h5>
+                    <p class="info">{{history.info}}</p>
+                    <p class="date"><strong>{{history.date}}</strong></p>
+                    <p>
+                        <ion-rating readonly class="small-rate" size="small" rate="3"></ion-rating>
+                        <ion-label>4.6</ion-label>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</ion-content>

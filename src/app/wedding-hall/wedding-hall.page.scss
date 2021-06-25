@@ -1,0 +1,34 @@
+@import "../../global.scss";
+.content-wrapper {
+    overflow-y: auto;
+    padding: 5px;
+    height: 100%;
+    .row {
+        margin: 0;
+        border-bottom: 1px solid grey;
+        div {
+            padding: 0 !important;
+            text-align: left;
+            p {
+                margin-bottom: 3px;
+            }
+        }
+        .col-8 {
+            padding: 5px !important;
+            h5 {
+                margin-top: 0;
+                margin-bottom: 3px;
+                color: var(--theam-color);
+                font-size: 15px;
+            }
+            .info {
+                font-size: 13px;
+                color: grey;
+                line-height: 1;
+            }
+            .date {
+                font-size: 12px;
+            }
+        }
+    }
+}

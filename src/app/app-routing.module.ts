@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
+import { TabsPage } from './tabs/tabs.page';
 
 const routes: Routes = [
   {
@@ -74,6 +75,29 @@ const routes: Routes = [
   {
     path: 'order-summary',
     loadChildren: () => import('./order-summary/order-summary.module').then( m => m.OrderSummaryPageModule)
+  },
+  {
+    path: 'booking-history',
+    loadChildren: () => import('./booking-history/booking-history.module').then( m => m.BookingHistoryPageModule)
+  },
+  {
+    path: 'wedding-hall',
+    loadChildren: () => import('./wedding-hall/wedding-hall.module').then( m => m.WeddingHallPageModule)
+  },
+  {
+    path: 'tabs',
+    component: TabsPage,
+    children: [
+      {
+        path: '',
+        loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
+      },
+    ]
+    // loadChildren: () => import('./tabs/tabs.module').then( m => m.TabsPageModule)
+  },
+  {
+    path: 'home',
+    loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
   }
 ];
 

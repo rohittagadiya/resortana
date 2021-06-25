@@ -21,11 +21,17 @@ export class AppComponent {
 
   goToPage(route) {
     switch (route) {
+      case 'home':
+        this.navCtrl.navigateRoot('tabs');
+        break;
       case 'room-details':
         this.navCtrl.navigateRoot('room-details');
         break;
       case 'order-summary':
         this.navCtrl.navigateRoot('order-summary');
+        break;
+      case 'booking-history':
+        this.navCtrl.navigateRoot('booking-history');
         break;
       case 'change-pwd':
         this.navCtrl.navigateRoot('change-password');

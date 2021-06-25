@@ -1,0 +1,6 @@
+@import "../../global.scss";
+ion-tab-button[aria-selected="true"] {
+    color: var(--theam-color);
+    font-weight: 600;
+    font-size: large;
+}
