@@ -115,6 +115,10 @@ ion-rating.small-rate {
     }
 }
 
+.t-c {
+    color: var(--theam-color) !important;
+}
+
 .slides-md,
 .swiper-pagination-bullet-active {
     --bullet-background-active: var(--theam-color);

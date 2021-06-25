@@ -1,0 +1,126 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-back-button text=""></ion-back-button>
+        </ion-buttons>
+        <ion-buttons slot="end">
+            <ion-menu-button style="color: black;">
+                <ion-icon name="menu-outline"></ion-icon>
+            </ion-menu-button>
+        </ion-buttons>
+        <ion-title>Lorance Hall</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <div class="main-wrapper">
+        <div class="scroll-content">
+            <ion-slides pager="true" [options]="slideOpts">
+                <ion-slide>
+                    <img src="./assets/images/1.jpg" alt="">
+                </ion-slide>
+                <ion-slide>
+                    <img src="./assets/images/2.jpg" alt="">
+                </ion-slide>
+                <ion-slide>
+                    <img src="./assets/images/3.jpg" alt="">
+                </ion-slide>
+                <ion-slide>
+                    <img src="./assets/images/2.jpg" alt="">
+                </ion-slide>
+            </ion-slides>
+            <div class="slider-bottom px-2">
+                <div class="row pt-2">
+                    <div class="col-7 text-left">
+                        <p class="room-name">Lorance Wedding Hall</p>
+                    </div>
+                    <div class="col-5 text-right">
+                        <p>3.4 Very Good</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-7 text-left">
+                        <ion-rating size="small" rate="3"></ion-rating>
+                    </div>
+                    <div class="col-5 text-right m-auto">
+                        <p>AED 1500.00?Per Day</p>
+                    </div>
+                </div>
+            </div>
+            <!-- <ion-content>
+                <div id="map" style="height:100px"></div>
+            </ion-content> -->
+            <div class="abt-wrapper">
+                <p>About This Hall</p>
+                <p><span>Seating Capacity: 230</span> <span class="pl-3">Square Fit: 230</span></p>
+                <p>30% payment will deducted online while the rest of the 70% will be paid in cash on spot while confirming
+                </p>
+            </div>
+            <div class="row">
+                <div class="col-6 ion-text-left">
+                    <ion-label class="pl-3">Date</ion-label>
+                    <div class="pt-2 pl-3 px-0 d-flex ">
+                        <img class="icon-img" src="./../../assets/images/calender.png" alt="">
+                        <ion-note class="t-c">10 july 2021</ion-note>
+                    </div>
+                </div>
+                <div class="col-6 ion-text-left pl-0">
+                    <ion-label>No. of Guest</ion-label>
+                    <div class="pt-2 d-flex ">
+                        <img class="icon-img" src="./../../assets/images/checkout.png" alt="">
+                        <ion-note class="t-c">237 Guest</ion-note>
+                    </div>
+                    <!--  <ion-item lines="none" class="p-0">     
+            <img class="icon-img" src="./../../assets/images/calender.png" alt="">
+            <ion-label>16 july 2018</ion-label>
+          </ion-item> -->
+                </div>
+            </div>
+            <p class="ion-text-left pl-3 pt-4 mb-0">Amentities</p>
+            <div class="row">
+                <div class="col-5">
+                    <div class="pt-2 pl-3 d-flex ion-text-left">
+                        <img class="icon-img" src="./../../assets/images/boating.png" alt="">
+                        <ion-label>Wifi</ion-label>
+                    </div>
+                    <ion-item lines="none" class="p-0">
+                        <img class="icon-img" src="./../../assets/images/gym.png" alt="">
+                        <ion-label>Parking</ion-label>
+                    </ion-item>
+                    <div class=" pl-3 d-flex">
+                        <img class="icon-img " src="./../../assets/images/spa.png" alt="">
+                        <ion-label>Bridal Room</ion-label>
+                    </div>
+                </div>
+                <div class="col-7">
+                    <div class="pt-2 pl-3 d-flex ion-text-left">
+                        <img class="icon-img" src="./../../assets/images/wildlifeview.png" alt="">
+                        <ion-label>Table Chair</ion-label>
+                    </div>
+                    <ion-item lines="none" class="p-0">
+                        <img class="icon-img" src="./../../assets/images/food.png" alt="">
+                        <ion-label>Projector </ion-label>
+                    </ion-item>
+                    <!-- <div class=" pl-3 d-flex">
+                        <img class="icon-img " src="./../../assets/images/telephone.png" alt="">
+                        <ion-label>Telephone</ion-label>
+                    </div> -->
+                </div>
+            </div>
+            <!-- <p class="ion-text-left pl-3 pt-4 mb-0">Terms & </p>
+            <ion-item *ngFor="let option of Room_options" [detail]="false">
+                <ion-label>
+                    <p>{{ option }}</p>
+                </ion-label>
+                <ion-icon name="chevron-forward-outline"></ion-icon>
+            </ion-item> -->
+            <div class="abt-wrapper">
+                <p>Terms & Conditions</p>
+                <p>30% payment will deducted online while the rest of the 70% will be paid in cash on spot while confirming
+                </p>
+            </div>
+            <ion-button class="custom-btn mt-2" shape="round" expand="block">Book Now</ion-button>
+
+        </div>
+    </div>
+</ion-content>

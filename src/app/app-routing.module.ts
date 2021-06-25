@@ -106,6 +106,10 @@ const routes: Routes = [
   {
     path: 'list-items',
     loadChildren: () => import('./list-items/list-items.module').then( m => m.ListItemsPageModule)
+  },
+  {
+    path: 'wedding-details',
+    loadChildren: () => import('./wedding-details/wedding-details.module').then( m => m.WeddingDetailsPageModule)
   }
 
 ];
