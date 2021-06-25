@@ -75,9 +75,12 @@ export class AppComponent {
       case 'checkout':
         this.navCtrl.navigateRoot('checkout');
         break;
-        case 'item-details':
+      case 'item-details':
         this.navCtrl.navigateRoot('item-details');
-        break;       
+        break;
+      case 'list-items':
+        this.navCtrl.navigateRoot('list-items');
+        break;
       default:
         break;
     }

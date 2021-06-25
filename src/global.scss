@@ -137,6 +137,14 @@ ion-rating.small-rate {
     position: relative;
 }
 
+.main-wrapper3 {
+    text-align: center;
+    height: 100%;
+    overflow-y: auto;
+    background: #cccccc2b;
+    padding: 10px;
+}
+
 .scroll-content {
     height: 100%;
     overflow-y: auto;
@@ -154,6 +162,25 @@ ion-rating.small-rate {
             padding: 0 !important;
             background: white !important;
         }
+    }
+}
+
+.tb-2 {
+    ion-avatar {
+        width: 20px;
+        height: 20px;
+        margin-right: 6px;
+        img {
+            width: 20px;
+            height: 20px;
+        }
+    }
+    ion-label {
+        margin-right: 0;
+        padding-right: 0;
+    }
+    .item-native {
+        padding-left: 2px !important;
     }
 }
 

@@ -1,0 +1,82 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-back-button text=""></ion-back-button>
+        </ion-buttons>
+        <ion-buttons slot="end">
+            <ion-menu-button style="color: black;">
+                <ion-icon name="menu-outline"></ion-icon>
+            </ion-menu-button>
+        </ion-buttons>
+        <ion-title>Resorts</ion-title>
+    </ion-toolbar>
+    <ion-toolbar class="tb-2">
+        <ion-buttons>
+            <ion-button>
+                <ion-item>
+                    <ion-avatar slot="start">
+                        <img src="./assets/images/sort.png">
+                    </ion-avatar>
+                    <ion-label>Sort</ion-label>
+                </ion-item>
+            </ion-button>
+            <ion-button>
+                <ion-item>
+                    <ion-avatar slot="start">
+                        <img src="./assets/images/filter.png">
+                    </ion-avatar>
+                    <ion-label>Filter</ion-label>
+                </ion-item>
+            </ion-button>
+            <ion-button>
+                <ion-item>
+                    <ion-avatar slot="start">
+                        <img src="./assets/images/map.png">
+                    </ion-avatar>
+                    <ion-label>Map</ion-label>
+                </ion-item>
+            </ion-button>
+        </ion-buttons>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <div class="main-wrapper3">
+        <div class="row banner-wrapper">
+            <div class="col-10 text-left">
+                <p class="title">Dubai</p>
+                <div class="d-flex">
+                    <img class="icon-img " src="./assets/images/room.png" alt="">
+                    <ion-label>Room</ion-label>
+                </div>
+                <div class="d-flex my-1">
+                    <img class="icon-img " src="./assets/images/adults.png" alt="">
+                    <ion-label>02 Adults</ion-label>
+                </div>
+                <div class="d-flex">
+                    <img class="icon-img " src="./assets/images/days.png" alt="">
+                    <ion-label>04 Days (10 July 2021 - 14 July 2018)</ion-label>
+                </div>
+            </div>
+            <div class="col-2 m-auto">
+                <img src="./assets/images/search.png" alt="">
+            </div>
+        </div>
+        <div class="content-wrapper px-0 py-3" style="overflow-y: hidden;">
+            <div class="row" *ngFor="let history of booking_list">
+                <div class="col-4">
+                    <img [src]="history.img" alt="">
+                </div>
+                <div class="col-8">
+                    <h5 class="title">{{history.name}}</h5>
+                    <p class="info">{{history.info}}</p>
+                    <p class="date"><strong>{{history.date}}</strong></p>
+                    <p>
+                        <ion-rating readonly class="small-rate" size="small" rate="5"></ion-rating>
+                        <ion-label>4.6</ion-label>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</ion-content>
