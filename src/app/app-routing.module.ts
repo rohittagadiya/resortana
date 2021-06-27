@@ -114,6 +114,9 @@ const routes: Routes = [
   {
     path: 'modalpage',
     loadChildren: () => import('./modalpage/modalpage.module').then( m => m.ModalpagePageModule)
+  },{
+    path: 'wedding-details',
+    loadChildren: () => import('./wedding-details/wedding-details.module').then( m => m.WeddingDetailsPageModule)
   }
 
 ];

@@ -84,6 +84,9 @@ export class AppComponent {
       case 'rewards':
         this.navCtrl.navigateRoot('rewards');
         break;  
+      case 'wedding-details':
+        this.navCtrl.navigateRoot('wedding-details');
+        break;
       default:
         break;
     }
