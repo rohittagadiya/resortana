@@ -81,6 +81,9 @@ export class AppComponent {
       case 'list-items':
         this.navCtrl.navigateRoot('list-items');
         break;
+      case 'rewards':
+        this.navCtrl.navigateRoot('rewards');
+        break;  
       default:
         break;
     }

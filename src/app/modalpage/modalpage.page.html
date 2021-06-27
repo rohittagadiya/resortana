@@ -1,0 +1,38 @@
+<ion-content>
+  <p>No. Of Guest</p>
+  <ion-item>
+    <div class="row pt-2">
+      <div class="col-7 d-flex text-left">
+        <img class="icon-img" src="./../../assets/images/adults.png" alt="">
+        <ion-label>Adult</ion-label>
+      </div>
+      <div class="col-5 d-flex text-right">
+        <p class="button-class  mt-2 px-1" (click)="deducteCount()">-</p>
+        <p class="mb-0 px-2 mt-2">{{ count }}</p>
+        <p class="button-class px-1  mt-2" (click)="increaseCount()">+</p>
+      </div>
+    </div>
+  </ion-item>
+  <ion-item>
+    <div class="row pt-2">
+      <div class="col-7 d-flex text-left">
+        <img class="icon-img" src="./../../assets/images/adults.png" alt="">
+        <ion-label>Adult</ion-label>
+      </div>
+      <div class="col-5 d-flex text-right">
+        <p class="button-class  mt-2 px-1" (click)="deducteCount()">-</p>
+        <p class="mb-0 px-2 mt-2">{{ count }}</p>
+        <p class="button-class px-1  mt-2" (click)="increaseCount()">+</p>
+      </div>
+    </div>
+  </ion-item>
+  <div class="row pt-2">
+
+    <div class="col-12 text-center">
+      <button class="btn">Done</button>
+
+    </div>
+  </div>
+
+
+</ion-content>

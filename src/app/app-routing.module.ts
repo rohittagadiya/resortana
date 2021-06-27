@@ -106,6 +106,14 @@ const routes: Routes = [
   {
     path: 'list-items',
     loadChildren: () => import('./list-items/list-items.module').then( m => m.ListItemsPageModule)
+  },
+  {
+    path: 'rewards',
+    loadChildren: () => import('./rewards/rewards.module').then( m => m.RewardsPageModule)
+  },
+  {
+    path: 'modalpage',
+    loadChildren: () => import('./modalpage/modalpage.module').then( m => m.ModalpagePageModule)
   }
 
 ];
