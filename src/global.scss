@@ -19,7 +19,7 @@
 @import "~@ionic/angular/css/normalize.css";
 @import "~@ionic/angular/css/structure.css";
 @import "~@ionic/angular/css/typography.css";
-@import '~@ionic/angular/css/display.css';
+@import "~@ionic/angular/css/display.css";
 
 /* Optional CSS utils that can be commented out */
 
@@ -37,7 +37,7 @@
 }
 
 * {
-    font-family: 'Josefin Sans', sans-serif !important;
+    font-family: "Josefin Sans", sans-serif !important;
 }
 
 @mixin button-text-style {
@@ -85,8 +85,8 @@ ion-checkbox {
         border-color: var(--theam-color) !important;
         background: var(--theam-color) !important;
     }
-    --background-checked:var(--theam-color) !important;
-    --border-color-checked:var(--theam-color) !important;
+    --background-checked: var(--theam-color) !important;
+    --border-color-checked: var(--theam-color) !important;
 }
 
 ion-range {
@@ -274,4 +274,22 @@ ion-rating.small-rate {
     ion-label {
         font-size: 10px;
     }
+}
+.searchbar-class {
+    ion-searchbar {
+       
+        --cancel-button-color: var(--theam-color);
+        --clear-button-color: var(--theam-color);
+        input {
+            border-radius: 5px !important;
+            // text-align: left !important;
+            padding: 0 !important;
+            background: white !important;
+        }
+    }
+    
+}
+.searchbtn-class .searchbar-search-icon.sc-ion-searchbar-ios {
+    right: 5px !important;
+    left: calc(90% - 5px) !important;
 }

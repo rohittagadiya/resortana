@@ -1,0 +1,26 @@
+@import "../../global.scss";
+
+p {
+    margin-bottom: 0px;
+}
+.dates-wrapper {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    background-color: #ffffff;
+    border-radius: 3px;
+}
+
+.border-right {
+    border-right: 1px solid lightgray;
+}
+
+.heading {
+    font-size: medium;
+    color: var(--theam-color);
+}
+
+.content {
+    font-size: small;
+}
+ion-note {
+    font-size: small;
+}

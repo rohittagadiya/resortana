@@ -1,0 +1,39 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button text=""></ion-back-button>
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-menu-button style="color: black;">
+        <ion-icon name="menu-outline"></ion-icon>
+      </ion-menu-button>
+    </ion-buttons>
+    <ion-title>Resorts</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+      <ion-tabs>
+        <ion-tab-bar slot="top" class="ion-tab-bar">
+          <ion-tab-button tab="home">
+            <span class="d-flex">
+              <ion-img class="icon" src="./assets/images/sort.png"></ion-img>
+              <ion-note class="pl-2">Sort</ion-note>
+            </span>
+          </ion-tab-button>
+          <ion-tab-button tab="home" selected>
+            <span class="d-flex">
+              <ion-img class="icon" src="./assets/images/filter.png"></ion-img>
+              <ion-note class="pl-2">Filter</ion-note>
+            </span>
+          </ion-tab-button>
+          <ion-tab-button tab="home">
+            <span class="d-flex">
+              <ion-img class="icon" src="./assets/images/map.png"></ion-img>
+              <ion-note class="pl-2">Map</ion-note>
+            </span>
+          </ion-tab-button>
+        </ion-tab-bar>
+      </ion-tabs>
+
+</ion-content>

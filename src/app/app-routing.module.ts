@@ -117,7 +117,15 @@ const routes: Routes = [
   },{
     path: 'wedding-details',
     loadChildren: () => import('./wedding-details/wedding-details.module').then( m => m.WeddingDetailsPageModule)
+  },  {
+    path: 'resort',
+    loadChildren: () => import('./resort/resort.module').then( m => m.ResortPageModule)
+  },
+  {
+    path: 'resort-details',
+    loadChildren: () => import('./resort-details/resort-details.module').then( m => m.ResortDetailsPageModule)
   }
+
 
 ];
 

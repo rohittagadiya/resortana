@@ -3,11 +3,25 @@
     width: auto;
     margin-right: 10px;
 }
-.button-class{
+.color-pink{
+    color: #C43471;;
+}
+ion-content {
+    --background: transparent;
+}
 
-border: 2px solid #C43471;
-border-radius: 50%;
-height: 20px;
-line-height: 14px;
-// padding: 0 !important;
+.app-update-cnt {
+    width: 90%;
+    margin: auto;
+}
+
+.app-update-cnt-wrpr {
+    border-radius: 10px;
+    width: 100%;
+    background: #ececec;
+    text-align: center;
+}
+
+.update-text {
+    padding: 0 10px;
 }

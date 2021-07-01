@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ModalController } from '@ionic/angular';
 
 @Component({
   selector: 'app-modalpage',
@@ -7,12 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ModalpagePage implements OnInit {
 
-  constructor() { }
+  constructor(modalCtrl: ModalController) { }
   count: number = 0;
   ngOnInit() {
   }
   deducteCount(){
-    this.count++;
+    this.count--;
   }
   increaseCount(){
     this.count++;
