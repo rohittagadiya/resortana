@@ -3,11 +3,20 @@
     width: auto;
     margin-right: 10px;
 }
-.color-pink{
-    color: #C43471;;
+
+.color-pink {
+    color: #C43471;
+    ;
 }
+
 ion-content {
-    --background: transparent;
+    --background: transparent !important;
+}
+
+button {
+    outline: none !important;
+    border: none !important;
+    box-shadow: none !important;
 }
 
 .app-update-cnt {
@@ -16,10 +25,13 @@ ion-content {
 }
 
 .app-update-cnt-wrpr {
+    height: 200px;
     border-radius: 10px;
-    width: 100%;
+    width: 350px;
+    max-width: 95%;
     background: #ececec;
     text-align: center;
+    padding: 20px 10px;
 }
 
 .update-text {

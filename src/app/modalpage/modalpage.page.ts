@@ -8,7 +8,7 @@ import { ModalController } from '@ionic/angular';
 })
 export class ModalpagePage implements OnInit {
 
-  constructor(modalCtrl: ModalController) { }
+  constructor(public modalCtrl: ModalController) { }
   count: number = 0;
   ngOnInit() {
   }

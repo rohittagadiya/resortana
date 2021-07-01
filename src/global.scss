@@ -119,6 +119,19 @@ ion-rating.small-rate {
     color: var(--theam-color) !important;
 }
 
+.pos-abs {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+}
+
+.modal-page-class {
+    --background: #0000007a !important;
+}
+
 .slides-md,
 .swiper-pagination-bullet-active {
     --bullet-background-active: var(--theam-color);
@@ -275,9 +288,9 @@ ion-rating.small-rate {
         font-size: 10px;
     }
 }
+
 .searchbar-class {
     ion-searchbar {
-       
         --cancel-button-color: var(--theam-color);
         --clear-button-color: var(--theam-color);
         input {
@@ -287,8 +300,8 @@ ion-rating.small-rate {
             background: white !important;
         }
     }
-    
 }
+
 .searchbtn-class .searchbar-search-icon.sc-ion-searchbar-ios {
     right: 5px !important;
     left: calc(90% - 5px) !important;

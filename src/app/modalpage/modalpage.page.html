@@ -1,41 +1,41 @@
 <ion-content>
-  <div class="app-update-cnt pos-abs">
-    <div class="app-update-cnt-wrpr pos-abs shadow">
-      <p class="color-pink text-left">No. Of Guest</p>
-      <ion-item>
-        <div class="row pt-2">
-          <div class="col-8 px-0 d-flex text-left">
-            <img class="icon-img" src="./../../assets/images/adults.png" alt="">
-            <ion-label>Adult</ion-label>
-          </div>
-          <div class="col-4 pl-2 d-flex text-right">
-            <img src="./../../assets/images/minus.png" class="icon-img" (click)="deducteCount()" alt="">
-            <p class="mb-0 px-2 mt-2">{{ count }}</p>
-            <img src="./../../assets/images/addicon.png" class="icon-img pl-2" (click)="increaseCount()" alt="">
-          </div>
-        </div>
-      </ion-item>
-      <ion-item>
-        <div class="row pt-2">
-          <div class="col-8 px-0 d-flex text-left">
-            <img class="icon-img" src="./../../assets/images/adults.png" alt="">
-            <ion-label>Children</ion-label>
-          </div>
-          <div class="col-4 pl-0 d-flex text-right">
-            <img src="./../../assets/images/minus.png" class="icon-img" (click)="deducteCount()" alt="">
-            <p class="mb-0 px-2 ">{{ count }}</p>
-            <img src="./../../assets/images/addicon.png" class="icon-img pl-2" (click)="increaseCount()" alt="">
-          </div>
-        </div>
-      </ion-item>
-      <div class="row pt-2">
+    <div class="app-update-cnt pos-abs">
+        <div class="app-update-cnt-wrpr pos-abs shadow">
+            <p class="color-pink text-left">No. Of Guest</p>
+            <ion-item>
+                <div class="row pt-2">
+                    <div class="col-8 px-0 d-flex text-left">
+                        <img class="icon-img" src="./../../assets/images/adults.png" alt="">
+                        <ion-label>Adult</ion-label>
+                    </div>
+                    <div class="col-4 pl-2 d-flex text-right">
+                        <img src="./../../assets/images/minus.png" class="icon-img" (click)="deducteCount()" alt="">
+                        <p class="mb-0 px-2">{{ count }}</p>
+                        <img src="./../../assets/images/addicon.png" class="icon-img pl-2" (click)="increaseCount()" alt="">
+                    </div>
+                </div>
+            </ion-item>
+            <ion-item>
+                <div class="row pt-2">
+                    <div class="col-8 px-0 d-flex text-left">
+                        <img class="icon-img" src="./../../assets/images/adults.png" alt="">
+                        <ion-label>Children</ion-label>
+                    </div>
+                    <div class="col-4 pl-0 d-flex text-right">
+                        <img src="./../../assets/images/minus.png" class="icon-img" (click)="deducteCount()" alt="">
+                        <p class="mb-0 px-2 ">{{ count }}</p>
+                        <img src="./../../assets/images/addicon.png" class="icon-img pl-2" (click)="increaseCount()" alt="">
+                    </div>
+                </div>
+            </ion-item>
+            <div class="row pt-2">
 
-        <div class="col-12 text-center">
-          <button class="btn color-pink" (click)="modalCtrl.dismiss()">Done</button>
+                <div class="col-12 text-center">
+                    <button class="btn color-pink" (click)="modalCtrl.dismiss()">Done</button>
 
+                </div>
+            </div>
         </div>
-      </div>
     </div>
-  </div>
 
 </ion-content>
