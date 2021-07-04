@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NavController } from '@ionic/angular';
 
 @Component({
   selector: 'app-checkout',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CheckoutPage implements OnInit {
 
-  constructor() { }
+  constructor(public navCtrl: NavController) { }
 
   ngOnInit() {
   }
@@ -165,5 +166,9 @@ export class CheckoutPage implements OnInit {
         }
       },
     }
+  }
+
+  proceedPayment(){
+    this.navCtrl.navigateRoot('payment-detail');
   }
 }

@@ -145,6 +145,10 @@ const routes: Routes = [
   },  {
     path: 'map-view',
     loadChildren: () => import('./map-view/map-view.module').then( m => m.MapViewPageModule)
+  },
+  {
+    path: 'payment-detail',
+    loadChildren: () => import('./payment-detail/payment-detail.module').then( m => m.PaymentDetailPageModule)
   }
 
 

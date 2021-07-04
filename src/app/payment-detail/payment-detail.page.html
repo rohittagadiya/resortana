@@ -1,0 +1,41 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-back-button text=""></ion-back-button>
+        </ion-buttons>
+        <ion-buttons slot="end">
+            <ion-menu-button style="color: black;">
+                <ion-icon name="menu-outline"></ion-icon>
+            </ion-menu-button>
+        </ion-buttons>
+        <ion-title>Payment Details</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <div class="main-wrapper text-left p-4">
+        <div class="row form-wrapper">
+            <div class="col-12 text-center">
+                <h2>Paying off</h2>
+            </div>
+            <div class="col-12">
+                <ion-input placeholder="card number" type="numeric" name="card-number"></ion-input>
+            </div>
+            <div class="col-6">
+                <ion-input placeholder="Expire month" type="numeric" name="month"></ion-input>
+            </div>
+            <div class="col-6">
+                <ion-input placeholder="Expire year" type="numeric" name="year"></ion-input>
+            </div>
+            <div class="col-6">
+                <ion-input placeholder="CVV" type="numeric" name="cvv"></ion-input>
+            </div>
+            <div class="col-6">
+                <p>3 or 4 digits usually found on the signature strip</p>
+            </div>
+            <div class="col-12">
+                <ion-button class="custom-btn mt-2" shape="round" expand="block">PROCEED</ion-button>
+            </div>
+        </div>
+    </div>
+</ion-content>
