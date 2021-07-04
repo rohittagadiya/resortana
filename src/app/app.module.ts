@@ -8,6 +8,7 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { SuperTabsModule } from '@ionic-super-tabs/angular';
 import { TabsPageModule } from './tabs/tabs.module';
+// import { GoogleMaps } from '@ionic-native/google-maps';
 
 @NgModule({
   declarations: [AppComponent],

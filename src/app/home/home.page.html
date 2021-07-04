@@ -13,7 +13,7 @@
             <ion-grid>
                 <ion-row>
                     <ion-col size="6" *ngFor="let service of services_list">
-                        <div>
+                        <div (click)="goToMainPage()">
                             <img [src]="service.icon" alt="">
                             <p>{{service.title}}</p>
                         </div>

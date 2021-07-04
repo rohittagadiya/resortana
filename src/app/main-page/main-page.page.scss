@@ -1,0 +1,30 @@
+@import "../../global.scss";
+@import "../resort-details/resort-details.page.scss";
+.recomnded-wrapper {
+    // display: -webkit-inline-box;
+    display: -webkit-box;
+    overflow-x: scroll;
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+    .recomnded-item {
+        width: 200px;
+        max-width: 200px;
+    }
+    .card-title {
+        color: var(--theam-color);
+        font-size: large;
+        text-align: left;
+        padding: 8px;
+        margin: 0;
+    }
+    .card-subtitle {
+        text-align: left;
+        padding: 0 10px 0px 10px;
+    }
+}
+
+::-webkit-scrollbar {
+    display: none;
+}

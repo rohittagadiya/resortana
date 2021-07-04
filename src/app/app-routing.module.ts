@@ -92,6 +92,14 @@ const routes: Routes = [
         path: '',
         loadChildren: () => import('./home/home.module').then(m => m.HomePageModule)
       },
+      {
+        path: 'main-page',
+        loadChildren: () => import('./main-page/main-page.module').then(m => m.MainPagePageModule)
+      },
+      {
+        path: 'main-page-tabs',
+        loadChildren: () => import('./main-page-tabs/main-page-tabs.module').then(m => m.MainPageTabsPageModule)
+      },
     ]
     // loadChildren: () => import('./tabs/tabs.module').then( m => m.TabsPageModule)
   },
@@ -105,26 +113,40 @@ const routes: Routes = [
   },
   {
     path: 'list-items',
-    loadChildren: () => import('./list-items/list-items.module').then( m => m.ListItemsPageModule)
+    loadChildren: () => import('./list-items/list-items.module').then(m => m.ListItemsPageModule)
   },
   {
     path: 'rewards',
-    loadChildren: () => import('./rewards/rewards.module').then( m => m.RewardsPageModule)
+    loadChildren: () => import('./rewards/rewards.module').then(m => m.RewardsPageModule)
   },
   {
     path: 'modalpage',
-    loadChildren: () => import('./modalpage/modalpage.module').then( m => m.ModalpagePageModule)
-  },{
+    loadChildren: () => import('./modalpage/modalpage.module').then(m => m.ModalpagePageModule)
+  }, {
     path: 'wedding-details',
-    loadChildren: () => import('./wedding-details/wedding-details.module').then( m => m.WeddingDetailsPageModule)
-  },  {
+    loadChildren: () => import('./wedding-details/wedding-details.module').then(m => m.WeddingDetailsPageModule)
+  },
+  {
     path: 'resort',
-    loadChildren: () => import('./resort/resort.module').then( m => m.ResortPageModule)
+    loadChildren: () => import('./resort/resort.module').then(m => m.ResortPageModule)
   },
   {
     path: 'resort-details',
-    loadChildren: () => import('./resort-details/resort-details.module').then( m => m.ResortDetailsPageModule)
+    loadChildren: () => import('./resort-details/resort-details.module').then(m => m.ResortDetailsPageModule)
+  },
+  {
+    path: 'main-page-tabs',
+    loadChildren: () => import('./main-page-tabs/main-page-tabs.module').then(m => m.MainPageTabsPageModule)
+  },
+
+  {
+    path: 'main-page',
+    loadChildren: () => import('./main-page/main-page.module').then(m => m.MainPagePageModule)
+  },  {
+    path: 'map-view',
+    loadChildren: () => import('./map-view/map-view.module').then( m => m.MapViewPageModule)
   }
+
 
 
 ];

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NavController } from '@ionic/angular';
 
 @Component({
   selector: 'app-home',
@@ -26,9 +27,13 @@ export class HomePage implements OnInit {
     },
   ];
 
-  constructor() { }
+  constructor(public navCtrl: NavController) { }
 
   ngOnInit() {
+  }
+
+  goToMainPage(){
+    this.navCtrl.navigateRoot('tabs/main-page-tabs');
   }
 
 }

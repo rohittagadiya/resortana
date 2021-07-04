@@ -8,7 +8,7 @@ import { ItemDetailsPageRoutingModule } from './item-details-routing.module';
 
 import { ItemDetailsPage } from './item-details.page';
 import { IonicRatingModule } from 'ionic-rating';
-import { GoogleMaps } from '@ionic-native/google-maps';
+// import { GoogleMaps } from '@ionic-native/google-maps';
 import { RouteReuseStrategy } from '@angular/router';
 
 @NgModule({
@@ -22,7 +22,7 @@ import { RouteReuseStrategy } from '@angular/router';
   declarations: [ItemDetailsPage],
   providers: [
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy },
-    GoogleMaps
+    // GoogleMaps
   ],
 })
 export class ItemDetailsPageModule {}
